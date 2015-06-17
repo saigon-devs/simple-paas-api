@@ -1,0 +1,10 @@
+{
+  "name": "SimplePaas",
+  "version": "0.1.0",
+  "dependencies": {
+    "bootstrap-sass-official": "~3.3.4",
+    "bootstrap-material-design": "~0.3.0",
+    "jquery-migrate-official": "~1.2.1",
+    "jquery-form": "~3.46.0"
+  }
+}

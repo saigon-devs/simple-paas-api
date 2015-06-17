@@ -1,0 +1,6 @@
+{
+  "name": "Setting",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./SettingPage.jsx"
+}
