@@ -32,7 +32,7 @@ export default class ImageRow extends React.Component {
                     <td>{this.props.virtualSize}</td>
                     <td>{this.props.created}</td>
                     <td>
-                        <ModalTrigger modal={<LoadImageDetailModal />}>
+                        <ModalTrigger modal={<LoadImageDetailModal repository={this.props.repository} imageId={this.props.id} />}>
                             <Button bsStyle='default' className="btn-xs">View</Button>
                         </ModalTrigger>
 

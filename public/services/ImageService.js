@@ -47,6 +47,14 @@ class ImageService extends BaseService {
         });
         this.executeRequest(extOptions);
     }
+
+    queryImage(options){
+        let extOptions = assign({}, options, {
+            url: this.serverUrl + API_IMAGE_URL + options.id,
+            type: 'GET'
+        });
+        this.executeRequest(extOptions);
+    }
 }
 
 export default new ImageService();

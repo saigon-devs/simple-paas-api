@@ -74,6 +74,9 @@ export default class Header extends React.Component {
                     <ul className="nav navbar-nav">
                         <li><Link className="" to="container">Containers</Link></li>
                     </ul>
+                    <ul className="nav navbar-nav">
+                        <li><Link className="" to="about">About</Link></li>
+                    </ul>
                 </div>
             );
             profileMenu = (

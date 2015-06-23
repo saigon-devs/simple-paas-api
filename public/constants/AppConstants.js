@@ -16,6 +16,7 @@ export default keyMirror({
     SEARCH_IMAGE: null,
     CREATE_IMAGE: null,
     DELETE_IMAGE: null,
+    QUERY_IMAGE: null,
 
     // services
     GET_SERVICES: null

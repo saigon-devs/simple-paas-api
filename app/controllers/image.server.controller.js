@@ -81,4 +81,11 @@ export default class ImageController {
             res.status(200).json(JSON.parse(resData.data));
         });
     };
+
+    queryInspectImage(req, res){
+        let imageName = req.params.imagename;
+        dockerApi.queryInspectImage(imageName,(resData)=>{
+            res.status(200).json(JSON.parse(resData.data));
+        })
+    };
 }

@@ -16,6 +16,7 @@ var exec = require('child_process').exec;
 export default function (app) {
     // Root routing
     let imageCntrl = new ImageCntrl();
+    app.route('/api/images/:imagename').get(imageCntrl.queryInspectImage);
     app.route('/api/images').get(imageCntrl.getAllImages);
     app.route('/api/images/:id').delete(imageCntrl.deleteImage);
     app.route('/api/images').post(imageCntrl.createImage);

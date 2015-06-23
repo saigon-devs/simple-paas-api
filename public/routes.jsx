@@ -9,6 +9,7 @@ import HomePage from './components/Home';
 import ImagePage from './components/Image';
 import ServicePage from './components/Service';
 import ContainerPage from './components/Container';
+import AboutPage from './components/About';
 import utils from './utils';
 
 export default (
@@ -20,6 +21,7 @@ export default (
         <Route name="container" path={utils.getSubDomainAliasUrl('/container')} handler={ContainerPage}/>
         <Route name="image" path={utils.getSubDomainAliasUrl('/image')} handler={ImagePage}/>
         <Route name="service" path={utils.getSubDomainAliasUrl('/service')} handler={ServicePage}/>
+        <Route name="about" path={utils.getSubDomainAliasUrl('/about')} handler={AboutPage}/>
         <NotFoundRoute handler={HomePage}/>
     </Route>
 );

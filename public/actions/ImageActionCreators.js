@@ -39,5 +39,17 @@ export default {
             }
         };
         ImageService.deleteImage(options);
-    }
+    },
+    queryImage:(imageId)=>{
+        let option = {
+            id: imageId,
+            doneCallback:(result)=>{
+                AppDispatcher.dispatch({
+                    actionType: Constants.QUERY_IMAGE,
+                    image: result
+                });
+            }
+        };
+        ImageService.queryImage(option);
+    },
 };

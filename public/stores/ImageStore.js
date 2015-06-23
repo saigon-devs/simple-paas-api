@@ -42,6 +42,8 @@ class ImageStore extends BaseStore {
                     index++;
                 }
                 break;
+            case Constants.QUERY_IMAGE:
+                break;
         }
         this.emitChange();
     }
