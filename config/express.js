@@ -151,9 +151,6 @@ export default function () {
         }
     });
 
-    //setup db
-    rethinkdbService.setup();
-
     // Return Express server instance
     return app;
 };
